@@ -1,0 +1,8 @@
+#!/usr/sh
+
+$BUILD
+
+cf login -u $USERNAME -p $PASSWORD -o $ORG -s $SPACE
+
+APP_NAME=`yq r $MANIFEST_PATH name`
+cf zero-downtime-push $APP_NAME -f $MANIFEST_PATH
