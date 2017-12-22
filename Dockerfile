@@ -9,4 +9,4 @@ RUN chmod +x /bin/yq
 RUN tar -zxvf /tmp/cf.tar -C /bin
 RUN yes | cf install-plugin autopilot
 
-ADD cf-push /bin
+ADD cf-push /bin/cf-push
