@@ -1,4 +1,5 @@
-#!/usr/sh
+#!/bin/sh
+
 set -e
 
 $BUILD
